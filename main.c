@@ -51,7 +51,7 @@ mpenter(void)
 static void
 mpmain(void)
 {
-  cprintf("cpu%d: starting %d\n", cpuid(), cpuid());
+  cprintf("MetroOS \nCircuitify \n©Circuitify Computer 2026 ", cpuid(), cpuid());
   idtinit();       // load idt register
   xchg(&(mycpu()->started), 1); // tell startothers() we're up
   scheduler();     // start running processes
